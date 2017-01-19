@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bob\Bob.cs" />
+    <Compile Include="bob\BobTest.cs" />
     <Compile Include="example\Example.cs" />
     <Compile Include="example\ExampleTests.cs" />
     <Compile Include="hello-world\HelloWorld.cs" />
@@ -53,6 +55,7 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bob\README.md" />
     <None Include="hello-world\README.md" />
     <None Include="packages.config" />
   </ItemGroup>

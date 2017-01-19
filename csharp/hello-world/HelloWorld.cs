@@ -10,7 +10,7 @@ namespace Exercism.hello_world
     {
         public static string Hello(string name)
         {
-            if(name == null)
+            if(name == null || name.Length == 0)
             {
                 return "Hello, World!";
             }
