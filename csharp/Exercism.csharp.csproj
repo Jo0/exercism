@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="bob\Bob.cs" />
     <Compile Include="bob\BobTest.cs" />
+    <Compile Include="difference-of-squares\DifferenceOfSquaresTest.cs" />
+    <Compile Include="difference-of-squares\Squares.cs" />
     <Compile Include="example\Example.cs" />
     <Compile Include="example\ExampleTests.cs" />
     <Compile Include="gigasecond\Gigasecond.cs" />
@@ -60,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bob\README.md" />
+    <None Include="difference-of-squares\README.md" />
     <None Include="gigasecond\README.md" />
     <None Include="hello-world\README.md" />
     <None Include="leap\README.md" />
