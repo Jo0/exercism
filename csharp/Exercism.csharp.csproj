@@ -47,6 +47,8 @@
     <Compile Include="bob\BobTest.cs" />
     <Compile Include="example\Example.cs" />
     <Compile Include="example\ExampleTests.cs" />
+    <Compile Include="gigasecond\Gigasecond.cs" />
+    <Compile Include="gigasecond\GigasecondTest.cs" />
     <Compile Include="hello-world\HelloWorld.cs" />
     <Compile Include="hello-world\HelloWorldTest.cs" />
     <Compile Include="leap\LeapTest.cs" />
@@ -58,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bob\README.md" />
+    <None Include="gigasecond\README.md" />
     <None Include="hello-world\README.md" />
     <None Include="leap\README.md" />
     <None Include="packages.config" />
