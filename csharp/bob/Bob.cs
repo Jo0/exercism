@@ -1,4 +1,6 @@
-﻿public class Bob
+﻿using System.Linq;
+
+public class Bob
 {
     /*
     Bob is a lackadaisical teenager.In conversation, his responses are very limited.
@@ -15,22 +17,17 @@
         {
             return "Fine. Be that way!";
         }
-        if (msg.LastIndexOf('.') == msg.Length - 1 || char.IsLetter(msg[msg.Length-1]) || char.IsDigit(msg[msg.Length - 1]))
-        {
-            return "Whatever.";
-        }
-        else if(msg.LastIndexOf('?') == msg.Length - 1 && msg.CompareTo(msg.ToUpper()) != 0)
-        {
-            return "Sure.";
-        }
-        else if(msg.LastIndexOf('!') == msg.Length - 1 || ((msg.LastIndexOf('?') == msg.Length - 1 && msg.CompareTo(msg.ToUpper()) == 0)) || 
-            msg.CompareTo(msg.ToUpper()) == 0 || (msg.CompareTo(msg.ToUpper()) == 0 && char.IsLetter(msg[msg.Length - 1])))
+        else if (msg.LastIndexOf('!') == msg.Length - 1 || (msg.LastIndexOf('?') == msg.Length - 1 && msg.CompareTo(msg.ToUpper()) == 0 && char.IsLetter(msg[msg.Length-2])) || (msg.CompareTo(msg.ToUpper()) == 0 && char.IsLetter(msg[msg.Length - 1])))
         {
             return "Whoa, chill out!";
         }
+        else if(msg.LastIndexOf('?') == msg.Length - 1)
+        {
+            return "Sure.";
+        }       
         else
         {
-            return "Fine. Be that way!";
+            return "Whatever.";
         }
 
 
