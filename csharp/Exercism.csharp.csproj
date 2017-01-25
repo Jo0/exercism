@@ -59,6 +59,7 @@
     <Compile Include="hello-world\HelloWorldTest.cs" />
     <Compile Include="leap\LeapTest.cs" />
     <Compile Include="leap\Year.cs" />
+    <Compile Include="nucleotide-count\DNA.cs" />
     <Compile Include="nucleotide-count\NucleotideCountTest.cs" />
     <Compile Include="pangram\Pangram.cs" />
     <Compile Include="pangram\PangramTest.cs" />
