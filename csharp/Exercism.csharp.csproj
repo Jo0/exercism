@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="accumulate\AccumulateTest.cs" />
     <Compile Include="bob\Bob.cs" />
     <Compile Include="bob\BobTest.cs" />
     <Compile Include="difference-of-squares\DifferenceOfSquaresTest.cs" />
@@ -77,6 +78,7 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="accumulate\README.md" />
     <None Include="bob\README.md" />
     <None Include="difference-of-squares\README.md" />
     <None Include="gigasecond\README.md" />
