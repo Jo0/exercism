@@ -1,11 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 internal class DNA
 {
     private string v;
     public Dictionary<char, int> NucleotideCounts = new Dictionary<char, int> { { 'A', 0 }, { 'T', 0 }, { 'C', 0 }, { 'G', 0 } };
-    //System.ArgumentException InvalidNucleotideException;
     public DNA(string v)
     {
         this.v = v;
@@ -18,7 +18,8 @@ internal class DNA
 
     public int Count(char c)
     {
-       
+        if (!NucleotideCounts.ContainsKey(c))
+            throw new InvalidNucleotideException();
 
         int count = 0;
 
@@ -29,5 +30,10 @@ internal class DNA
         }
 
         return count;
+    }
+
+    public class InvalidNucleotideException : Exception
+    {
+        public InvalidNucleotideException() { }
     }
 }

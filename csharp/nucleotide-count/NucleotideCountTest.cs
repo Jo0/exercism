@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using NUnit.Framework;
+using static DNA;
 
 [TestFixture]
 public class NucleoTideCountTest
@@ -54,15 +55,15 @@ public class NucleoTideCountTest
         Assert.That(dna.Count('T'), Is.EqualTo(2));
     }
 
-    /*
-    [Ignore("Remove to run test")]
+    
+    //[Ignore("Remove to run test")]
     [Test]
     public void Validates_nucleotides()
     {
         var dna = new DNA("GGTTGG");
         Assert.Throws<InvalidNucleotideException>(() => dna.Count('X'));
     }
-    */
+    
 
     //[Ignore("Remove to run test")]
     [Test]
